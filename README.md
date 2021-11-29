@@ -39,6 +39,9 @@ This is a data engineering solution that reads flat files, transforms the data, 
   
   ## STEP 4
   
-  The data is visualized using Power BI
+  The data is visualized using Power BI. Below are some generated reports.
   
-  
+  ![alt text](https://github.com/adeniranwumi/vessel_project/blob/main/report1.png)
+  ![alt text](https://github.com/adeniranwumi/vessel_project/blob/main/report2.png)
+  ![alt text](https://github.com/adeniranwumi/vessel_project/blob/main/report3.png)
+  ![alt text](https://github.com/adeniranwumi/vessel_project/blob/main/report4.png)
