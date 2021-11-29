@@ -27,7 +27,7 @@ This is a data engineering solution that reads flat files, transforms the data, 
 
   ![alt text](https://github.com/adeniranwumi/vessel_project/blob/main/Entity_relationship_diagram.png)
   
-  
+  The scripts for creating the tables and some stored procedures for data transformation can be referenced here: [SQL SCRIPTS](/scripts.sql)
   
   ## STEP 3
   
