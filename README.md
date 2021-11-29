@@ -14,7 +14,7 @@ This is a data engineering solution that reads flat files, transforms the data, 
 
   ## STEP 1
   
-  The flat files are uploaded into an Azure blob strorage container
+  The flat files are uploaded into an Azure blob storage container
   
   
   ## STEP 2
