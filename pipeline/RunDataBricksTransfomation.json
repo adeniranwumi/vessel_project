@@ -1,0 +1,87 @@
+{
+	"name": "RunDataBricksTransfomation",
+	"properties": {
+		"activities": [
+			{
+				"name": "RunNotebook",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/omowunmi.whitney@gmail.com/TransformationSteps",
+					"baseParameters": {
+						"testname": "testvalue"
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "VESSEL_ETL",
+					"type": "LinkedServiceReference"
+				}
+			},
+			{
+				"name": "ALTER COLUMNS",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [
+					{
+						"activity": "RunNotebook",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[ADD_COLUMNS_VESSELINFO]"
+				},
+				"linkedServiceName": {
+					"referenceName": "VESSEL_DB_LINK",
+					"type": "LinkedServiceReference"
+				}
+			},
+			{
+				"name": "UPDATE VALUES",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [
+					{
+						"activity": "ALTER COLUMNS",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[TRANSFORM_VESSELINFO]"
+				},
+				"linkedServiceName": {
+					"referenceName": "VESSEL_DB_LINK",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2021-11-28T23:26:41Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

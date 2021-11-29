@@ -1,0 +1,9 @@
+{
+	"name": "ADFprojectThynk",
+	"location": "westus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3d00f1c1-15be-4f5b-b3d5-8e22ece63576",
+		"tenantId": "453ae0fa-58fd-4689-bcd6-c2b38ca89071"
+	}
+}
