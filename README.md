@@ -34,4 +34,8 @@ This is a data engineering solution that reads flat files, transforms the data, 
 
   ![alt text](https://github.com/adeniranwumi/vessel_project/blob/main/Data_factory_pipeline.png)
   
+  ## STEP 4
+  
+  The data is visualized using Power BI
+  
   
