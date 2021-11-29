@@ -8,6 +8,7 @@ This is a data engineering solution that reads flat files, transforms the data, 
   3. Azure data factory
   4. Azure SQL server and database
   5. Power BI
+  6. Parallels(virtual machine)
 
 
 
@@ -20,7 +21,7 @@ This is a data engineering solution that reads flat files, transforms the data, 
   ## STEP 2
   
   The next step is setting up a Databricks workspace to transform the data. Pyspark is the language used here. 
-  This step facilitates the transformation of data into   the data model and writes the data into the database.
+  This step facilitates the transformation of data into the data model and writes the data into the database.
   
    ## DATABASE STRUCTURE
 
