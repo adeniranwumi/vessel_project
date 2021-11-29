@@ -10,7 +10,7 @@ This is a data engineering solution that reads flat files, transforms the data, 
   5. Power BI
   6. Parallels(virtual machine)
 
-
+  ![alt text](https://github.com/adeniranwumi/vessel_project/blob/main/SOLUTION_OVERVIEW.png)
 
 
   ## STEP 1
@@ -26,6 +26,8 @@ This is a data engineering solution that reads flat files, transforms the data, 
    ## DATABASE STRUCTURE
 
   ![alt text](https://github.com/adeniranwumi/vessel_project/blob/main/Entity_relationship_diagram.png)
+  
+  
   
   ## STEP 3
   
